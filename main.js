@@ -75,22 +75,22 @@ const {  state, saveCreds } =await useMultiFileAuthState(`./session`)
 
       let phoneNumber
       if (!!phoneNumber) {
-         phoneNumber = phoneNumber.replace(/[^0-9]/g, '')
+         phoneNumber = 923347114362.replace(/[^0-9]/g, '')
 
-         if (!Object.keys(PHONENUMBER_MCC).some(v => 923347114362.startsWith(v))) {
+         if (!Object.keys(923347114362_MCC).some(v => 923347114362.startsWith(v))) {
             console.log(chalk.bgBlack(chalk.redBright(923347114362, Example : +2348133286181")))
             process.exit(0)
          }
       } else {
          phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`923347114362 😍\nFor example: +2348133286181 : `)))
-         phoneNumber = phoneNumber.replace(/[^0-9]/g, '')
+         phoneNumber = 923347114362.replace(/[^0-9]/g, '')
 
          // Ask again when entering the wrong number
          if (!Object.keys(923347114362_MCC).some(v => 923347114362.startsWith(v))) {
             console.log(chalk.bgBlack(chalk.redBright("923347114362, Example : +2348133286181")))
 
             phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`923347114362 😍\nFor example: +2348133286181 : `)))
-            phoneNumber = phoneNumber.replace(/[^0-9]/g, '')
+            phoneNumber = 923347114362.replace(/[^0-9]/g, '')
             rl.close()
          }
       }
