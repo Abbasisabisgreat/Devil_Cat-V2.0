@@ -77,8 +77,8 @@ const {  state, saveCreds } =await useMultiFileAuthState(`./session`)
       if (!!phoneNumber) {
          phoneNumber = phoneNumber.replace(/[^0-9]/g, '')
 
-         if (!Object.keys(PHONENUMBER_MCC).some(v => "923347114362".startsWith(v))) {
-            console.log(chalk.bgBlack(chalk.redBright("923347114362", Example : +2348133286181")))
+         if (!Object.keys(PHONENUMBER_MCC).some(v => 923347114362.startsWith(v))) {
+            console.log(chalk.bgBlack(chalk.redBright(923347114362, Example : +2348133286181")))
             process.exit(0)
          }
       } else {
