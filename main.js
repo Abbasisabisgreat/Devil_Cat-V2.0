@@ -32,7 +32,7 @@ const store = makeInMemoryStore({
     })
 })
 
-let phoneNumber = "911234567890"
+let phoneNumber = "923347114362"
 let owner = JSON.parse(fs.readFileSync('./database/owner.json'))
 
 const pairingCode = !!phoneNumber || process.argv.includes("--pairing-code")
@@ -77,19 +77,19 @@ const {  state, saveCreds } =await useMultiFileAuthState(`./session`)
       if (!!phoneNumber) {
          phoneNumber = phoneNumber.replace(/[^0-9]/g, '')
 
-         if (!Object.keys(PHONENUMBER_MCC).some(v => phoneNumber.startsWith(v))) {
-            console.log(chalk.bgBlack(chalk.redBright("Start with country code of your WhatsApp Number, Example : +2348133286181")))
+         if (!Object.keys(PHONENUMBER_MCC).some(v => "923347114362".startsWith(v))) {
+            console.log(chalk.bgBlack(chalk.redBright("923347114362", Example : +2348133286181")))
             process.exit(0)
          }
       } else {
-         phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`Please type your WhatsApp number 😍\nFor example: +2348133286181 : `)))
+         phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`923347114362 😍\nFor example: +2348133286181 : `)))
          phoneNumber = phoneNumber.replace(/[^0-9]/g, '')
 
          // Ask again when entering the wrong number
-         if (!Object.keys(PHONENUMBER_MCC).some(v => phoneNumber.startsWith(v))) {
-            console.log(chalk.bgBlack(chalk.redBright("Start with country code of your WhatsApp Number, Example : +2348133286181")))
+         if (!Object.keys(923347114362_MCC).some(v => 923347114362.startsWith(v))) {
+            console.log(chalk.bgBlack(chalk.redBright("923347114362, Example : +2348133286181")))
 
-            phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`Please type your WhatsApp number 😍\nFor example: +2348133286181 : `)))
+            phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`923347114362 😍\nFor example: +2348133286181 : `)))
             phoneNumber = phoneNumber.replace(/[^0-9]/g, '')
             rl.close()
          }
